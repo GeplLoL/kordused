@@ -1,7 +1,6 @@
-﻿﻿from math import *
+from math import *
 from random import *
 from time import *
-from tkinter import TRUE
 #5
 tuba = int(input("Mitu toa korteris: "))
 for i in range(1,tuba+1,1): #range(n) i=0,1,2,3,...,n-1
@@ -195,8 +194,8 @@ sugu = input("Mis on sinu sugu?(mees or naine) ")
 while True:
     if sugu=="mees":
         age = int(input("kui vana sa oled? "))
-    if age>=16 and age<=18:
-        print("sa sobid meile")
+        if age>=16 and age<=18:
+            print("sa sobid meile")
     elif sugu=="naine":
         print("lubatud ainult mehed")
     else:
